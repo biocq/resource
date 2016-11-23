@@ -116,8 +116,9 @@ It is sometimes hard to remember. one can use the letter:The letters u, g, and o
 * [f1000 workflow paper TCGA Workflow: Analyze cancer genomics and epigenomics data using Bioconductor packages](http://f1000research.com/articles/5-1542/v1)
 * paper [Data mining The Cancer Genome Atlas in the era of precision cancer medicine](http://www.smw.ch/content/smw-2015-14183/)
 * [CrossHub](http://sourceforge.net/p/crosshub/): a tool for multi-way analysis of The Cancer Genome Atlas (TCGA) in the context of gene expression regulation mechanisms.
+* [survival curves for TCGA data: a simple web tool](http://www.oncolnc.org/)
 
-#### packages for data wrangling, tidying and visualizing.  
+### packages for data wrangling, tidying and visualizing.  
 
 * [biobroom](https://www.bioconductor.org/packages/release/bioc/html/biobroom.html):Turn Bioconductor objects into tidy data frames  
 * [readr](https://github.com/hadley/readr)  
@@ -227,7 +228,7 @@ see a nice post by using python by Radhouane Aniba:[Genomic Data Visualization i
 
 * [Ferret, a User-Friendly Java Tool to Extract Data from the 1000 Genomes Project](http://limousophie35.github.io/Ferret/)
 * [EGA:European Genome-phenome Archive](https://www.ebi.ac.uk/ega/datasets)
-* [survival curves for TCGA data: a simple web tool](http://www.oncolnc.org/)
+
 
 ### Integrative analysis
 * [High-dimensional genomic data bias correction and data integration using MANCIE](http://www.nature.com/ncomms/2016/160413/ncomms11305/full/ncomms11305.html)  correct batch effects for data from different sequencing methods. (RNAseq vs ChIPseq)

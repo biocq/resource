@@ -107,56 +107,13 @@ It is sometimes hard to remember. one can use the letter:The letters u, g, and o
 * [GNU datamash](https://www.gnu.org/software/datamash/)
 * [tabtk](https://github.com/lh3/tabtk) Toolkit for processing TAB-delimited format from Heng Li, the author of `Samtools`, `BWA` and many others.
 * [Another cross-platform, efficient, practical and pretty CSV/TSV toolkit in Golang](https://github.com/shenwei356/csvtk)
-
-### How to name files
-It is really important to name your files correctly! see a [ppt](https://rawgit.com/Reproducible-Science-Curriculum/rr-organization1/master/organization-01-slides.html) by Jenny Bryan.
-
-Three principles for (file) names:
-* Machine readable (do not put special characters and space in the name)  
-* Human readable (Easy to figure out what the heck something is, based on its name, add slug)  
-* Plays well with default ordering:   
-
-1. Put something numeric first  
-
-2. Use the ISO 8601 standard for dates (YYYY-MM-DD) 
-
-3. Left pad other numbers with zeros  
-
-![](https://cloud.githubusercontent.com/assets/4106146/17389870/5dfc54c4-59cd-11e6-9293-a1f8789c8352.png)
-
-![](https://cloud.githubusercontent.com/assets/4106146/17389869/5df7f6f4-59cd-11e6-8715-86645243d70c.png)
-
-
-**Good naming of your files can help you to extract meta data from the file name**  
-* [dirdf](https://github.com/ropenscilabs/dirdf) Create tidy data frames of file metadata from directory and file names.
-
-```r
-> dir("examples/dataset_1/")
-[1] "2013-06-26_BRAFWTNEG_Plasmid-Cellline-100_A01.csv"
-[2] "2013-06-26_BRAFWTNEG_Plasmid-Cellline-100_A02.csv"
-[3] "2014-02-26_BRAFWTNEG_FFPEDNA-CRC-1-41_D08.csv"
-[4] "2014-03-05_BRAFWTNEG_FFPEDNA-CRC-REPEAT_H03.csv"
-[5] "2016-04-01_BRAFWTNEG_FFPEDNA-CRC-1-41_E12.csv"
-
-> library("dirdf")
-> dirdf("examples/dataset_1/", template="date_assay_experiment_well.ext")
-        date     assay           experiment well ext                                          pathname
-1 2013-06-26 BRAFWTNEG Plasmid-Cellline-100  A01 csv 2013-06-26_BRAFWTNEG_Plasmid-Cellline-100_A01.csv
-2 2013-06-26 BRAFWTNEG Plasmid-Cellline-100  A02 csv 2013-06-26_BRAFWTNEG_Plasmid-Cellline-100_A02.csv
-3 2014-02-26 BRAFWTNEG     FFPEDNA-CRC-1-41  D08 csv     2014-02-26_BRAFWTNEG_FFPEDNA-CRC-1-41_D08.csv
-4 2014-03-05 BRAFWTNEG   FFPEDNA-CRC-REPEAT  H03 csv   2014-03-05_BRAFWTNEG_FFPEDNA-CRC-REPEAT_H03.csv
-```
-
-### parallelization 
-
-Using these tool will greatly improve your working efficiency and get rid of most of your `for loops`.  
-1. [xargs](http://www.cyberciti.biz/faq/linux-unix-bsd-xargs-construct-argument-lists-utility/)  
-2. [GNU parallel](https://www.gnu.org/software/parallel/). one of my post [here](http://crazyhottommy.blogspot.com/2016/03/the-most-powerful-uniux-commands-i.html)  
-3. [gxargs](https://github.com/brentp/gargs) by Brent Pedersen. Written in GO.  
-
-### Statistics
-* [Essence of linear algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
-
+#### TCGA tools
+* [AnnotationHub](http://bioconductor.org/packages/devel/bioc/vignettes/AnnotationHub/inst/doc/AnnotationHub-HOWTO.html#roadmap-epigenomics-project) bioconductor package for TCGA and epigenome roadmap, ENCODE project.  
+* [TCGAbiolinks](http://bioconductor.org/packages/devel/bioc/vignettes/TCGAbiolinks/inst/doc/tcgaBiolinks.html) bioconductor package
+* [RTCGA bioconductor](http://bioconductor.org/packages/devel/bioc/html/RTCGA.html)
+* [f1000 workflow paper TCGA Workflow: Analyze cancer genomics and epigenomics data using Bioconductor packages](http://f1000research.com/articles/5-1542/v1)
+* paper [Data mining The Cancer Genome Atlas in the era of precision cancer medicine](http://www.smw.ch/content/smw-2015-14183/)
+* [CrossHub](http://sourceforge.net/p/crosshub/): a tool for multi-way analysis of The Cancer Genome Atlas (TCGA) in the context of gene expression regulation mechanisms.
 #### packages for data wrangling, tidying and visualizing.  
 
 * [biobroom](https://www.bioconductor.org/packages/release/bioc/html/biobroom.html):Turn Bioconductor objects into tidy data frames  
@@ -264,12 +221,7 @@ see a nice post by using python by Radhouane Aniba:[Genomic Data Visualization i
 
 ### Large data consortium data mining
 
-* [AnnotationHub](http://bioconductor.org/packages/devel/bioc/vignettes/AnnotationHub/inst/doc/AnnotationHub-HOWTO.html#roadmap-epigenomics-project) bioconductor package for TCGA and epigenome roadmap, ENCODE project.  
-* [TCGAbiolinks](http://bioconductor.org/packages/devel/bioc/vignettes/TCGAbiolinks/inst/doc/tcgaBiolinks.html) bioconductor package
-* [RTCGA bioconductor](http://bioconductor.org/packages/devel/bioc/html/RTCGA.html)
-* [f1000 workflow paper TCGA Workflow: Analyze cancer genomics and epigenomics data using Bioconductor packages](http://f1000research.com/articles/5-1542/v1)
-* paper [Data mining The Cancer Genome Atlas in the era of precision cancer medicine](http://www.smw.ch/content/smw-2015-14183/)
-* [CrossHub](http://sourceforge.net/p/crosshub/): a tool for multi-way analysis of The Cancer Genome Atlas (TCGA) in the context of gene expression regulation mechanisms.
+
 * [Ferret, a User-Friendly Java Tool to Extract Data from the 1000 Genomes Project](http://limousophie35.github.io/Ferret/)
 * [EGA:European Genome-phenome Archive](https://www.ebi.ac.uk/ega/datasets)
 * [survival curves for TCGA data: a simple web tool](http://www.oncolnc.org/)

@@ -107,13 +107,16 @@ It is sometimes hard to remember. one can use the letter:The letters u, g, and o
 * [GNU datamash](https://www.gnu.org/software/datamash/)
 * [tabtk](https://github.com/lh3/tabtk) Toolkit for processing TAB-delimited format from Heng Li, the author of `Samtools`, `BWA` and many others.
 * [Another cross-platform, efficient, practical and pretty CSV/TSV toolkit in Golang](https://github.com/shenwei356/csvtk)
-#### TCGA tools
+
+### TCGA tools
+
 * [AnnotationHub](http://bioconductor.org/packages/devel/bioc/vignettes/AnnotationHub/inst/doc/AnnotationHub-HOWTO.html#roadmap-epigenomics-project) bioconductor package for TCGA and epigenome roadmap, ENCODE project.  
 * [TCGAbiolinks](http://bioconductor.org/packages/devel/bioc/vignettes/TCGAbiolinks/inst/doc/tcgaBiolinks.html) bioconductor package
 * [RTCGA bioconductor](http://bioconductor.org/packages/devel/bioc/html/RTCGA.html)
 * [f1000 workflow paper TCGA Workflow: Analyze cancer genomics and epigenomics data using Bioconductor packages](http://f1000research.com/articles/5-1542/v1)
 * paper [Data mining The Cancer Genome Atlas in the era of precision cancer medicine](http://www.smw.ch/content/smw-2015-14183/)
 * [CrossHub](http://sourceforge.net/p/crosshub/): a tool for multi-way analysis of The Cancer Genome Atlas (TCGA) in the context of gene expression regulation mechanisms.
+
 #### packages for data wrangling, tidying and visualizing.  
 
 * [biobroom](https://www.bioconductor.org/packages/release/bioc/html/biobroom.html):Turn Bioconductor objects into tidy data frames  
